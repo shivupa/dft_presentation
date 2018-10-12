@@ -7,8 +7,46 @@
 \begin{document}
 \frame{\vspace{-1.25cm}\titlepage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Molecular Dynamics reminder}
+\begin{frame}[t]{Hartree-Fock reminder}
+Molecular electronic Hamiltonian
+\begin{equation*}
+H = T + V_{ee} + V_{en}
+\end{equation*}
+\pause
+Make the approximation that the electrons interact with the \emph{mean field} of the other electrons\\
+\pause
+\begin{equation*}
+H = T + V_{ee} + V_{en}
+\end{equation*}
+\pause
+\begin{align*}
+F &= H^{\mathrm{core}} + G \\
+G_{\lambda\sigma} &= \sum_{\lambda\sigma} P_{\lambda\sigma}[2(\mu\nu|\lambda\sigma) - (\mu\lambda|\nu\sigma)]
+\end{align*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]{Why do we need DFT???}
+HF neglects \emph{electron correlation}\\ \vfill
+\pause
+Electron correlation can be static (multiple near equal energy configurations) and dynamics electron/electron reactions. \\ \vfill
+\begin{equation}
+E_{\mathrm{corr}} = E_{\mathrm{HF}} - E_{\mathrm{TRUE}}
+\end{equation}
+\pause
+\vfill
+This happens because in reality the electrons don't interact with the mean field of the electrons; they interact with all the other electrons.
+\vfill
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]{1998 Nobel Prize}
+\begin{figure}
+\includegraphics[width=0.5\textwidth,height=\textheight,keepaspectratio]{kohn.jpg}
+\includegraphics[width=0.5\textwidth,height=\textheight,keepaspectratio]{pople.jpg}
+\end{figure}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]{}
 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
